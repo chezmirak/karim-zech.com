@@ -129,7 +129,7 @@ h2 {
 /* Werke in zwei Spalten */
 .works-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten für Desktop */
     gap: 40px; /* Abstand zwischen den Spalten */
 }
 
@@ -150,6 +150,13 @@ h2 {
 
 .works-column ol li {
     margin-bottom: 10px;
+}
+
+/* Media Query für mobile Geräte */
+@media only screen and (max-width: 600px) {
+    .works-grid {
+        grid-template-columns: 1fr; /* Eine Spalte für mobile Geräte */
+    }
 }
 
 /* Mediathek-Sektion */
