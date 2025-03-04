@@ -1,0 +1,214 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #121212;
+}
+
+header {
+    background: rgba(34, 34, 34, 0.9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Impact', sans-serif;
+    font-size: 48px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 36px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a.youtube-icon:hover {
+    color: red;
+}
+
+.social-icons a.instagram-icon:hover {
+    color: #e1306c;
+}
+
+nav {
+    background: rgba(51, 51, 51, 0.9);
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Bauhaus 93', sans-serif;
+    font-size: 28px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #77dd77;
+}
+
+/* Biographie-Sektion */
+.biographie-section {
+    background: rgba(0, 0, 0, 0.9) url('hintergrund.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+.biographie-content {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Allgemeine Content-Sektionen */
+.content-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #fff;
+    border-bottom: 2px solid #77dd77;
+    padding-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Werke in zwei Spalten */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+    gap: 40px; /* Abstand zwischen den Spalten */
+}
+
+.works-column {
+    background: rgba(0, 0, 0, 0.7); /* Dunkler Hintergrund für jede Spalte */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.works-column h3 {
+    color: #77dd77; /* Grüne Überschriften */
+    margin-top: 0;
+}
+
+.works-column ol {
+    padding-left: 20px;
+}
+
+.works-column ol li {
+    margin-bottom: 10px;
+}
+
+/* Mediathek-Sektion */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Kontaktformular */
+#kontakt {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Sende-Button */
+#contact-form button {
+    background-color: #77dd77; /* Grüne Farbe */
+    color: #121212; /* Dunkle Schrift */
+    border: none;
+    padding: 8px 16px; /* Kleinere Größe */
+    font-size: 14px; /* Kleinere Schrift */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Breite anpassen */
+    max-width: 120px; /* Maximale Breite */
+    margin: 0 auto; /* Zentrieren */
+}
+
+#contact-form button:hover {
+    background-color: #66cc66; /* Helleres Grün beim Hover */
+}
+
+/* Footer */
+footer {
+    background: rgba(34, 34, 34, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
