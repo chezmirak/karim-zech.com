@@ -46,6 +46,7 @@ h1 {
     color: #e1306c;
 }
 
+/* Navigation */
 nav {
     background: rgba(51, 51, 51, 0.9);
     padding: 15px;
@@ -57,10 +58,11 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Ermöglicht das Umbrechen der Links auf kleineren Bildschirmen */
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 10px; /* Abstand zwischen den Links */
 }
 
 nav ul li a {
@@ -70,10 +72,27 @@ nav ul li a {
     font-family: 'Bauhaus 93', sans-serif;
     font-size: 28px;
     transition: color 0.3s ease;
+    white-space: nowrap; /* Verhindert, dass der Text umgebrochen wird */
 }
 
 nav ul li a:hover {
     color: #77dd77;
+}
+
+/* Media Query für mobile Geräte */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stapelt die Links vertikal */
+        align-items: center; /* Zentriert die Links */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduziert den Abstand zwischen den Links */
+    }
+
+    nav ul li a {
+        font-size: 1.2em; /* Verkleinert die Schriftgröße für mobile Geräte */
+    }
 }
 
 /* Biographie-Sektion */
