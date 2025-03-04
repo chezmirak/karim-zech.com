@@ -80,7 +80,7 @@ nav ul li a:hover {
 }
 
 /* Media Query für mobile Geräte */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     nav ul {
         flex-direction: column; /* Stapelt die Links vertikal */
         align-items: center; /* Zentriert die Links */
@@ -153,7 +153,7 @@ h2 {
 }
 
 /* Media Query für mobile Geräte */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .works-grid {
         grid-template-columns: 1fr; /* Eine Spalte für mobile Geräte */
     }
@@ -174,7 +174,7 @@ h2 {
 }
 
 /* Media Query für mobile Geräte */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .video-grid {
         grid-template-columns: 1fr; /* Eine Spalte für mobile Geräte */
     }
