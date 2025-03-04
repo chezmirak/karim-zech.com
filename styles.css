@@ -155,8 +155,8 @@ h2 {
 /* Mediathek-Sektion */
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten für Desktop */
+    gap: 20px; /* Abstand zwischen den Videos */
 }
 
 .video-item iframe {
@@ -164,6 +164,13 @@ h2 {
     height: 315px;
     border: none;
     border-radius: 10px;
+}
+
+/* Media Query für mobile Geräte */
+@media only screen and (max-width: 600px) {
+    .video-grid {
+        grid-template-columns: 1fr; /* Eine Spalte für mobile Geräte */
+    }
 }
 
 /* Kontaktformular */
